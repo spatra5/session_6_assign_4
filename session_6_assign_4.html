@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JQuery Assignment</title>
+	
+	<script src="../jQuery.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("button").click(function(e){
+				e.preventDefault();
+				
+				var $this = $(this);
+				$this.parent("div").css("background-color", "red");
+			});			
+		});
+	</script>
+
+</head>
+
+<body>
+	<div style="background-color:yellow">
+		<p>Click the button to change the background color of this paragraph.</p>
+		<button>Click me!</button>
+	</div>
+
+</body>
+</html>
